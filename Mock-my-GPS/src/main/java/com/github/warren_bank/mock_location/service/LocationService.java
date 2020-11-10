@@ -1,9 +1,9 @@
-package com.github.warren_bank.tech_talk_gps.service;
+package com.github.warren_bank.mock_location.service;
 
-import com.github.warren_bank.tech_talk_gps.R;
-import com.github.warren_bank.tech_talk_gps.data_model.LocPoint;
-import com.github.warren_bank.tech_talk_gps.service.looper.LocationThreadManager;
-import com.github.warren_bank.tech_talk_gps.ui.MainActivity;
+import com.github.warren_bank.mock_location.R;
+import com.github.warren_bank.mock_location.data_model.LocPoint;
+import com.github.warren_bank.mock_location.service.looper.LocationThreadManager;
+import com.github.warren_bank.mock_location.ui.MainActivity;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -15,6 +15,7 @@ import android.content.Intent;
 import android.os.Binder;
 import android.os.Build;
 import android.os.IBinder;
+import android.view.View;
 import android.widget.RemoteViews;
 
 public class LocationService extends Service {

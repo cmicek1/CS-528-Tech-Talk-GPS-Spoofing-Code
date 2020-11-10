@@ -1,4 +1,4 @@
-package com.github.warren_bank.tech_talk_gps.util;
+package com.github.warren_bank.mock_location.util;
 
 // copied from:
 //   https://github.com/xiangtailiang/FakeGPS/blob/V1.1/app/src/main/java/com/github/fakegps/ScreenUtils.java

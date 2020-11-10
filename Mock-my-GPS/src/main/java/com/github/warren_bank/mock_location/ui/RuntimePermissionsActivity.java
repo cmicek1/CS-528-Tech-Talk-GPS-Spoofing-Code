@@ -1,4 +1,4 @@
-package com.github.warren_bank.tech_talk_gps.ui;
+package com.github.warren_bank.mock_location.ui;
 
 import android.app.Activity;
 

@@ -1,10 +1,10 @@
-package com.github.warren_bank.tech_talk_gps.ui;
+package com.github.warren_bank.mock_location.ui;
 
-import com.github.warren_bank.tech_talk_gps.R;
-import com.github.warren_bank.tech_talk_gps.data_model.LocPoint;
-import com.github.warren_bank.tech_talk_gps.data_model.SharedPrefs;
-import com.github.warren_bank.tech_talk_gps.security_model.RuntimePermissions;
-import com.github.warren_bank.tech_talk_gps.service.LocationService;
+import com.github.warren_bank.mock_location.R;
+import com.github.warren_bank.mock_location.data_model.LocPoint;
+import com.github.warren_bank.mock_location.data_model.SharedPrefs;
+import com.github.warren_bank.mock_location.security_model.RuntimePermissions;
+import com.github.warren_bank.mock_location.service.LocationService;
 
 import android.content.Intent;
 import android.os.Bundle;

@@ -1,9 +1,13 @@
-package com.github.warren_bank.tech_talk_gps.util;
+package com.github.warren_bank.mock_location.util;
 
 // copied from:
 //   https://github.com/osmandapp/Osmand/blob/2.0.0/OsmAnd-java/src/main/java/net/osmand/util/MapUtils.java
 
-import com.github.warren_bank.tech_talk_gps.util.GeoPointParserUtil.GeoParsedPoint;
+import com.github.warren_bank.mock_location.util.GeoPointParserUtil.GeoParsedPoint;
+
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 public class MapUtils {
 

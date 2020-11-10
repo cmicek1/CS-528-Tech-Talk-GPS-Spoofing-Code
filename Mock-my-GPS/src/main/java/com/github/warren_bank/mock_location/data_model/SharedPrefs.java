@@ -1,9 +1,10 @@
-package com.github.warren_bank.tech_talk_gps.data_model;
+package com.github.warren_bank.mock_location.data_model;
 
-import com.github.warren_bank.tech_talk_gps.R;
+import com.github.warren_bank.mock_location.R;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import java.util.ArrayList;
 
 public final class SharedPrefs {
 
