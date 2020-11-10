@@ -192,10 +192,7 @@ public class LocationService extends Service {
                 stopSelf();
                 break;
             }
-            case ACTION_PREFS: {
-                LTM.onSharedPrefsChange((short) 0);
-                break;
-            }
+
         }
     }
 

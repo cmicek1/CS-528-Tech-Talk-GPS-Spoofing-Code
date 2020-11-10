@@ -36,13 +36,10 @@ public class MainActivity extends ActivityGroup {
         tabHost.setup(getLocalActivityManager());
 
         String tab_1_tag = getString(R.string.MainActivity_tab_1_tag);
-        String tab_2_tag = getString(R.string.MainActivity_tab_2_tag);
 
         String tab_1_label = getString(R.string.MainActivity_tab_1_label);
-        String tab_2_label = getString(R.string.MainActivity_tab_2_label);
 
         tabHost.addTab(tabHost.newTabSpec(tab_1_tag).setIndicator(tab_1_label).setContent(new Intent(this, FixedPositionActivity.class)));
-        //tabHost.addTab(tabHost.newTabSpec(tab_2_tag).setIndicator(tab_2_label).setContent(new Intent(this, TripSimulationActivity.class)));
 
         final Intent intent = getIntent();
         if (intent == null)

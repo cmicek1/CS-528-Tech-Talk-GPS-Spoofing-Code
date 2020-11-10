@@ -5,13 +5,11 @@ package com.github.warren_bank.mock_location.service.looper;
 
 import com.github.warren_bank.mock_location.data_model.LocPoint;
 import com.github.warren_bank.mock_location.data_model.SharedPrefsState;
-import com.github.warren_bank.mock_location.event_hooks.IJoyStickPresenter;
-import com.github.warren_bank.mock_location.event_hooks.ISharedPrefsListener;
 import com.github.warren_bank.mock_location.service.LocationService;
 
 import android.content.Context;
 
-public class LocationThreadManager implements IJoyStickPresenter, ISharedPrefsListener {
+public class LocationThreadManager {
     private static LocationThreadManager INSTANCE = new LocationThreadManager();
 
     private Context mContext;
@@ -148,46 +146,13 @@ public class LocationThreadManager implements IJoyStickPresenter, ISharedPrefsLi
         return mIsFlyMode;
     }
 
-    public void stopFlyMode() {
-        mIsFlyMode = false;
-    }
 
-    public void setMoveStep(double moveStep) {
-        mFixedJoystickIncrement = moveStep;
-    }
 
-    public double getMoveStep() {
-        return mFixedJoystickIncrement;
-    }
-
-    @Override
-    public void onArrowUpClick() {
-        mCurrentLocPoint.setLatitude(mCurrentLocPoint.getLatitude() + mFixedJoystickIncrement);
-    }
-
-    @Override
-    public void onArrowDownClick() {
-        mCurrentLocPoint.setLatitude(mCurrentLocPoint.getLatitude() - mFixedJoystickIncrement);
-    }
-
-    @Override
-    public void onArrowLeftClick() {
-        mCurrentLocPoint.setLongitude(mCurrentLocPoint.getLongitude() - mFixedJoystickIncrement);
-    }
-
-    @Override
-    public void onArrowRightClick() {
-        mCurrentLocPoint.setLongitude(mCurrentLocPoint.getLongitude() + mFixedJoystickIncrement);
-    }
 
     // =================================
     // integrate with Shared Preferences
     // =================================
 
-    @Override
-    public void onSharedPrefsChange(short diff_fields) {
-        importSharedPrefs();
-    }
 
     private void importSharedPrefs() {
         if (mContext == null) return;
