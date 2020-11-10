@@ -26,66 +26,18 @@
     <string name="MainActivity_extra_toast">toast</string>
 
     <!-- actionbar -->
-    <string name="MainActivity_actionbar_item_1">Save Bookmark</string>
-    <string name="MainActivity_actionbar_item_2">Bookmarks</string>
-    <string name="MainActivity_actionbar_item_3">Preferences</string>
 
     <string name="MainActivity_tab_1_tag">tag_1</string>
     <string name="MainActivity_tab_2_tag">tag_2</string>
 
     <string name="MainActivity_tab_1_label">&fixed_position;</string>
-    <string name="MainActivity_tab_2_label">&trip; Simulation</string>
 
-    <!-- conditional dialog: Save Bookmark -->
-    <string name="save_bookmark_menu_title">Location to Save:</string>
-    <string name="save_bookmark_option_1">&origin;</string>
-    <string name="save_bookmark_option_2">&destination;</string>
 
     <!-- tab_1: FixedPositionActivity ====================================== -->
 
     <string name="FixedPositionActivity_field_1">Location:\n<small>(&lat_lon;)</small></string>
 
-    <!-- tab_2: TripSimulationActivity ===================================== -->
-
-    <string name="TripSimulationActivity_field_1">&origin;:\n<small>(&lat_lon;)</small></string>
-    <string name="TripSimulationActivity_field_2">&destination;:\n<small>(&lat_lon;)</small></string>
-    <string name="TripSimulationActivity_field_3">Duration:\n<small>(seconds)</small></string>
-
-    <!-- BookmarksActivity ================================================= -->
-
-    <!-- extras -->
-    <string name="BookmarksActivity_extra_add_lat">lat</string>
-    <string name="BookmarksActivity_extra_add_lon">lon</string>
-
-    <!-- actionbar -->
-    <string name="BookmarksActivity_actionbar_item_1">Add</string>
-
-    <string name="open_bookmark_menu_title">Use Bookmark For:</string>
-    <string name="open_bookmark_option_1">@string/geo_intent_option_1</string>
-    <string name="open_bookmark_option_2">@string/geo_intent_option_2</string>
-    <string name="open_bookmark_option_3">@string/geo_intent_option_3</string>
-
-    <string name="edit_bookmark_field_1">Title:</string>
-    <string name="edit_bookmark_field_2">Location:\n<small>(&lat_lon;)</small></string>
-
-    <!-- PreferencesActivity =============================================== -->
-
-    <string name="PreferencesActivity_heading_1">General</string>
-    <string name="PreferencesActivity_heading_2">@string/MainActivity_tab_1_label</string>
-    <string name="PreferencesActivity_heading_3">@string/MainActivity_tab_2_label</string>
-
-    <!-- heading_1 -->
-    <string name="PreferencesActivity_field_1">Time (ms) between each update:</string>
-
-    <!-- heading_2 -->
-    <string name="PreferencesActivity_field_2">Number of times to mock location:\n<small>(0 = continue until explicitly stopped)</small></string>
-    <string name="PreferencesActivity_field_3">Show joystick:</string>
-    <string name="PreferencesActivity_field_4">Joystick lat/lon increment:</string>
-
-    <!-- heading_3 -->
-    <string name="PreferencesActivity_field_5">Hold destination as fixed position:</string>
-
-    <!-- common ============================================================ -->
+    
 
     <!-- buttons -->
     <string name="label_button_start">START</string>
