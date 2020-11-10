@@ -9,7 +9,7 @@
 ]>
 
 <resources>
-    <string name="app_name">Mock my GPS</string>
+    <string name="app_name">GPS Spoofing Tech Talk</string>
 
     <!-- GeoIntentActivity ================================================= -->
 
@@ -119,8 +119,8 @@
     <string name="error_add_bookmarkitem">Error: Could not add new bookmark</string>
 
     <!-- notifications -->
-    <string name="notification_service_ticker">Mock my GPS: running</string>
-    <string name="notification_service_content_line1">Mock my GPS</string>
+    <string name="notification_service_ticker">GPS Tech Talk: Running</string>
+    <string name="notification_service_content_line1">GPS Tech Talk</string>
     <!--
     <string name="notification_service_content_line2">Click to open. Dismiss to stop.</string>
     -->
