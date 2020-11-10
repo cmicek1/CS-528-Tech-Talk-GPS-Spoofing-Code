@@ -115,7 +115,7 @@ public class GeoIntentActivity extends Activity {
     }
 
     private void handleNewBookmark(LocPoint point) {
-        startBookmarksActivity(point);
+        //startBookmarksActivity(point);
     }
 
     private void startMainActivity() {
@@ -148,15 +148,5 @@ public class GeoIntentActivity extends Activity {
         startActivity(intent);
     }
 
-    private void startBookmarksActivity(LocPoint point) {
-        double lat = point.getLatitude();
-        double lon = point.getLongitude();
-
-        Intent intent = new Intent(GeoIntentActivity.this, BookmarksActivity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        intent.putExtra(getString(R.string.BookmarksActivity_extra_add_lat), lat);
-        intent.putExtra(getString(R.string.BookmarksActivity_extra_add_lon), lon);
-        startActivity(intent);
-    }
 
 }
