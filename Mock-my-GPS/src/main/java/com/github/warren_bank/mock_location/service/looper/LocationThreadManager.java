@@ -7,9 +7,7 @@ import com.github.warren_bank.mock_location.data_model.LocPoint;
 import com.github.warren_bank.mock_location.data_model.SharedPrefsState;
 import com.github.warren_bank.mock_location.event_hooks.IJoyStickPresenter;
 import com.github.warren_bank.mock_location.event_hooks.ISharedPrefsListener;
-import com.github.warren_bank.mock_location.security_model.RuntimePermissions;
 import com.github.warren_bank.mock_location.service.LocationService;
-import com.github.warren_bank.mock_location.ui.components.JoyStickView;
 
 import android.content.Context;
 
@@ -17,7 +15,6 @@ public class LocationThreadManager implements IJoyStickPresenter, ISharedPrefsLi
     private static LocationThreadManager INSTANCE = new LocationThreadManager();
 
     private Context mContext;
-    private JoyStickView mJoyStickView;
     private LocationThread mLocationThread;
     private LocPoint mCurrentLocPoint;
     private LocPoint mOriginLocPoint;
@@ -58,9 +55,6 @@ public class LocationThreadManager implements IJoyStickPresenter, ISharedPrefsLi
             mLocationThread.startThread();
         }
 
-        if (mFixedJoystickEnabled && !mIsFlyMode && RuntimePermissions.canDrawOverlays(mContext)) {
-            showJoyStick();
-        }
 
         mFixedCountRemaining = mFixedCount;
         mIsStarted = true;
@@ -72,7 +66,6 @@ public class LocationThreadManager implements IJoyStickPresenter, ISharedPrefsLi
             mLocationThread = null;
         }
 
-        hideJoyStick();
         mIsStarted = false;
 
         stopService();
@@ -86,22 +79,6 @@ public class LocationThreadManager implements IJoyStickPresenter, ISharedPrefsLi
         return mIsStarted;
     }
 
-    public void showJoyStick() {
-        if (mJoyStickView == null) {
-            mJoyStickView = new JoyStickView(mContext);
-            mJoyStickView.setJoyStickPresenter(this);
-        }
-
-        if (!mJoyStickView.isShowing()) {
-            mJoyStickView.addToWindow();
-        }
-    }
-
-    public void hideJoyStick() {
-        if ((mJoyStickView != null) && mJoyStickView.isShowing()) {
-            mJoyStickView.removeFromWindow();
-        }
-    }
 
     public LocPoint getCurrentLocPoint() {
         return new LocPoint(mCurrentLocPoint);
@@ -159,9 +136,6 @@ public class LocationThreadManager implements IJoyStickPresenter, ISharedPrefsLi
     }
 
     public void flyToLocation(LocPoint location, int trip_duration_seconds) {
-        if (mIsStarted && mFixedJoystickEnabled) {
-            hideJoyStick();
-        }
 
         mOriginLocPoint = new LocPoint(mCurrentLocPoint);
         mTargetLocPoint = new LocPoint(location);
@@ -241,12 +215,6 @@ public class LocationThreadManager implements IJoyStickPresenter, ISharedPrefsLi
         if (mFixedJoystickEnabled != prefsState.fixed_joystick_enabled) {
             mFixedJoystickEnabled = prefsState.fixed_joystick_enabled;
 
-            if (mIsStarted && !mIsFlyMode) {
-                if (mFixedJoystickEnabled)
-                    showJoyStick();
-                else
-                    hideJoyStick();
-            }
         }
 
         mFixedJoystickIncrement = prefsState.fixed_joystick_increment;
