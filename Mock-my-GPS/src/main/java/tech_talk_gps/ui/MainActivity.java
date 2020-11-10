@@ -1,7 +1,7 @@
-package com.github.warren_bank.mock_location.ui;
+package com.github.warren_bank.tech_talk_gps.ui;
 
-import com.github.warren_bank.mock_location.R;
-import com.github.warren_bank.mock_location.service.LocationService;
+import com.github.warren_bank.tech_talk_gps.R;
+import com.github.warren_bank.tech_talk_gps.service.LocationService;
 
 import android.app.ActivityGroup;
 import android.content.Intent;

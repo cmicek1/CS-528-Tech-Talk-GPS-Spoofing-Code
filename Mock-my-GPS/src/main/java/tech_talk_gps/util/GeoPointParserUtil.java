@@ -1,4 +1,4 @@
-package com.github.warren_bank.mock_location.util;
+package com.github.warren_bank.tech_talk_gps.util;
 
 // copied from:
 //   https://github.com/osmandapp/Osmand/blob/2.0.0/OsmAnd-java/src/main/java/net/osmand/util/GeoPointParserUtil.java

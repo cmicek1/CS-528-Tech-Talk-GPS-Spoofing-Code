@@ -1,11 +1,11 @@
-package com.github.warren_bank.mock_location.service.looper;
+package com.github.warren_bank.tech_talk_gps.service.looper;
 
 // copied from:
 //   https://github.com/xiangtailiang/FakeGPS/blob/V1.1/app/src/main/java/com/github/fakegps/JoyStickManager.java
 
-import com.github.warren_bank.mock_location.data_model.LocPoint;
-import com.github.warren_bank.mock_location.data_model.SharedPrefsState;
-import com.github.warren_bank.mock_location.service.LocationService;
+import com.github.warren_bank.tech_talk_gps.data_model.LocPoint;
+import com.github.warren_bank.tech_talk_gps.data_model.SharedPrefsState;
+import com.github.warren_bank.tech_talk_gps.service.LocationService;
 
 import android.content.Context;
 

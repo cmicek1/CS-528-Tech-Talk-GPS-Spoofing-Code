@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="com.github.warren_bank.mock_location">
+          package="com.github.warren_bank.tech_talk_gps">
 
     <!-- required to mock location -->
     <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"
@@ -21,11 +21,11 @@
         android:label="@string/app_name">
 
         <service
-            android:name=".service.LocationService"
+            android:name="com.github.warren_bank.tech_talk_gps.service.LocationService"
             android:exported="false" />
 
         <activity
-            android:name=".ui.MainActivity"
+            android:name="com.github.warren_bank.tech_talk_gps.ui.MainActivity"
             android:configChanges="colorMode|density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
             android:launchMode="standard"
             android:label="@string/app_name">
@@ -36,14 +36,14 @@
         </activity>
 
         <activity
-            android:name=".ui.FixedPositionActivity"
+            android:name="com.github.warren_bank.tech_talk_gps.ui.FixedPositionActivity"
             android:configChanges="colorMode|density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
             android:launchMode="standard" />
 
 
         <!-- copied from https://github.com/osmandapp/Osmand/blob/2.0.0/OsmAnd/AndroidManifest.xml -->
         <activity
-            android:name=".ui.GeoIntentActivity"
+            android:name="com.github.warren_bank.tech_talk_gps.ui.GeoIntentActivity"
             android:configChanges="colorMode|density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
             android:launchMode="standard">
 

@@ -1,8 +1,7 @@
-package com.github.warren_bank.mock_location.security_model;
+package com.github.warren_bank.tech_talk_gps.security_model;
 
-import com.github.warren_bank.mock_location.R;
-import com.github.warren_bank.mock_location.data_model.SharedPrefs;
-import com.github.warren_bank.mock_location.ui.RuntimePermissionsActivity;
+import com.github.warren_bank.tech_talk_gps.data_model.SharedPrefs;
+import com.github.warren_bank.tech_talk_gps.ui.RuntimePermissionsActivity;
 
 import android.app.Activity;
 import android.content.Context;

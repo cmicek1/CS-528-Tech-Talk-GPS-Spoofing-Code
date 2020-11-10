@@ -1,13 +1,13 @@
-package com.github.warren_bank.mock_location.ui;
+package com.github.warren_bank.tech_talk_gps.ui;
 
 // based on:
 //   https://github.com/osmandapp/Osmand/blob/2.0.0/OsmAnd/src/net/osmand/plus/activities/search/GeoIntentActivity.java
 
-import com.github.warren_bank.mock_location.R;
-import com.github.warren_bank.mock_location.data_model.LocPoint;
-import com.github.warren_bank.mock_location.data_model.SharedPrefs;
-import com.github.warren_bank.mock_location.util.GeoPointParserUtil;
-import com.github.warren_bank.mock_location.util.GeoPointParserUtil.GeoParsedPoint;
+import com.github.warren_bank.tech_talk_gps.R;
+import com.github.warren_bank.tech_talk_gps.data_model.LocPoint;
+import com.github.warren_bank.tech_talk_gps.data_model.SharedPrefs;
+import com.github.warren_bank.tech_talk_gps.util.GeoPointParserUtil;
+import com.github.warren_bank.tech_talk_gps.util.GeoPointParserUtil.GeoParsedPoint;
 
 import android.app.Activity;
 import android.app.AlertDialog;
