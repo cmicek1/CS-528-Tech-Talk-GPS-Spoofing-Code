@@ -1,0 +1,4 @@
+# Project exclude paths
+/.gradle/
+/Mock-my-GPS/build/
+/Mock-my-GPS/build/intermediates/javac/debug/classes/
