@@ -41,11 +41,6 @@
             android:launchMode="standard" />
 
 
-        <activity
-            android:name=".ui.PreferencesActivity"
-            android:configChanges="colorMode|density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
-            android:launchMode="standard" />
-
         <!-- copied from https://github.com/osmandapp/Osmand/blob/2.0.0/OsmAnd/AndroidManifest.xml -->
         <activity
             android:name=".ui.GeoIntentActivity"

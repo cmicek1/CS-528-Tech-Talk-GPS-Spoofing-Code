@@ -77,47 +77,4 @@ public class MainActivity extends ActivityGroup {
         if (is_started && !isFinishing())
             finish();
     }
-
-    // ---------------------------------------------------------------------------------------------
-    // ActionBar:
-    // ---------------------------------------------------------------------------------------------
-
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem menuItem) {
-        switch(menuItem.getItemId()) {
-            case R.id.menu_start_preferences: {
-                startPreferences();
-                return true;
-            }
-            default: {
-                return super.onOptionsItemSelected(menuItem);
-            }
-        }
-    }
-
-    private void startPreferences() {
-        Intent intent = new Intent(MainActivity.this, PreferencesActivity.class);
-        startActivity(intent);
-    }
-
-
-
-
-
-    private void saveBookmarkItemTab2(LocPoint origin, LocPoint destination) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-        builder.setTitle(R.string.save_bookmark_menu_title);
-        builder.setItems(R.array.save_bookmark_menu_options, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                switch (which + 1) {
-                    default:
-                        dialog.cancel();
-                        break;
-                }
-            }
-        });
-        builder.show();
-    }
 }
