@@ -11,14 +11,6 @@
 <resources>
     <string name="app_name">GPS Spoofing Tech Talk</string>
 
-    <!-- GeoIntentActivity ================================================= -->
-
-    <string name="geo_intent_menu_title">Use Geo-Intent For:</string>
-    <string name="geo_intent_option_1">&fixed_position;</string>
-    <string name="geo_intent_option_2">&trip; - &origin;</string>
-    <string name="geo_intent_option_3">&trip; - &destination;</string>
-    <string name="geo_intent_option_4">New Bookmark</string>
-
     <!-- MainActivity ====================================================== -->
 
     <!-- extras -->
@@ -63,7 +55,6 @@
 
     <!-- errors -->
     <!-- copied from https://github.com/osmandapp/Osmand/blob/2.0.0/OsmAnd/res/values/strings.xml#L2760 -->
-    <string name="error_geo_intent">Could not parse geo intent \'%s\'.</string>
     <string name="error_number_format">Could not parse number \'%s\'.</string>
     <string name="error_location_format">Could not parse location \'%s\'.</string>
     <string name="error_bookmarkitem_exists">Bookmark already exists \'%s\'.</string>

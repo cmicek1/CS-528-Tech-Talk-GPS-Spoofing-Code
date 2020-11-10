@@ -22,14 +22,6 @@
         <item name="android:padding">4dp</item>
     </style>
 
-    <style name="joystick_button" parent="@android:style/Widget.Button">
-        <item name="android:layout_width">@dimen/joystick_button_width</item>
-        <item name="android:layout_height">@dimen/joystick_button_height</item>
-        <item name="android:background">@color/joystick_button_background</item>
-        <item name="android:layout_margin">0dp</item>
-        <item name="android:padding">0dp</item>
-    </style>
-
     <style name="NotificationText"  parent="@android:style/TextAppearance.StatusBar.EventContent" />
     <style name="NotificationTitle" parent="@android:style/TextAppearance.StatusBar.EventContent.Title" />
 
