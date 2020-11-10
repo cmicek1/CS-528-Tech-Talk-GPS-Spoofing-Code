@@ -224,37 +224,6 @@ public final class SharedPrefs {
         return value;
     }
 
-    // --------------------------------------------------------------------------------------------- putBookmarkItems()
-
-    public static boolean putBookmarkItems(Context context, ArrayList<BookmarkItem> arrayList) {
-        SharedPreferences.Editor editor = getSharedPreferencesEditor(context);
-        return putBookmarkItems(editor, context, arrayList, true);
-    }
-
-    public static boolean putBookmarkItems(SharedPreferences.Editor editor, Context context, ArrayList<BookmarkItem> arrayList, boolean flush) {
-        int pref_key_id = R.string.pref_bookmarks;
-        String json     = BookmarkItem.toJson(arrayList);
-        return putString(editor, context, pref_key_id, json, flush);
-    }
-
-    // --------------------------------------------------------------------------------------------- getBookmarkItems()
-
-    public static ArrayList<BookmarkItem> getBookmarkItems(Context context) {
-        SharedPreferences sharedPreferences = getSharedPreferences(context);
-        return getBookmarkItems(sharedPreferences, context);
-    }
-
-    public static ArrayList<BookmarkItem> getBookmarkItems(SharedPreferences sharedPreferences, Context context) {
-        int pref_key_id = R.string.pref_bookmarks;
-        String defValue = null;
-        String json     = getString(sharedPreferences, context, pref_key_id, defValue);
-
-        return (json == null)
-          ? new ArrayList<BookmarkItem>()
-          : BookmarkItem.fromJson(json)
-        ;
-    }
-
     // --------------------------------------------------------------------------------------------- putTimeInterval()
 
     public static boolean putTimeInterval(Context context, int value) {

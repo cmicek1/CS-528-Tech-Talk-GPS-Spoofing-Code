@@ -1,24 +1,13 @@
 package com.github.warren_bank.mock_location.ui;
 
 import com.github.warren_bank.mock_location.R;
-import com.github.warren_bank.mock_location.data_model.BookmarkItem;
-import com.github.warren_bank.mock_location.data_model.LocPoint;
-import com.github.warren_bank.mock_location.data_model.SharedPrefs;
 import com.github.warren_bank.mock_location.service.LocationService;
 
 import android.app.ActivityGroup;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
 import android.widget.TabHost;
-import android.widget.TabWidget;
-import android.widget.TextView;
 import android.widget.Toast;
-import java.util.ArrayList;
 
 public class MainActivity extends ActivityGroup {
     private TabHost tabHost;

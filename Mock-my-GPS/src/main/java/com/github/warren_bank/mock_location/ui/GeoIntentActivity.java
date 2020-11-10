@@ -72,27 +72,6 @@ public class GeoIntentActivity extends Activity {
                         dialog.dismiss();
                         handleFixedPosition(point);
                         break;
-                    case 2:
-                        // trip origin
-                        dialog.dismiss();
-                        handleTripOrigin(point);
-                        break;
-                    case 3:
-                        // trip destination
-                        dialog.dismiss();
-                        handleTripDestination(point);
-                        break;
-                    case 4:
-                        // new bookmark
-                        dialog.dismiss();
-                        handleNewBookmark(point);
-                        break;
-                  /*
-                    default:
-                        dialog.cancel();
-                        handleNoData(null);
-                        break;
-                  */
                 }
             }
         });
@@ -104,19 +83,7 @@ public class GeoIntentActivity extends Activity {
         startMainActivity();
     }
 
-    private void handleTripOrigin(LocPoint point) {
-        SharedPrefs.putTripOrigin(GeoIntentActivity.this, point);
-        startMainActivity(2);
-    }
 
-    private void handleTripDestination(LocPoint point) {
-        SharedPrefs.putTripDestination(GeoIntentActivity.this, point);
-        startMainActivity(2);
-    }
-
-    private void handleNewBookmark(LocPoint point) {
-        //startBookmarksActivity(point);
-    }
 
     private void startMainActivity() {
         startMainActivity(0, null);
