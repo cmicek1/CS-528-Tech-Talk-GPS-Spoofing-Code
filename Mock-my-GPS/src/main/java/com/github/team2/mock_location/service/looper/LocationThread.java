@@ -1,9 +1,9 @@
-package com.github.warren_bank.mock_location.service.looper;
+package com.github.team2.mock_location.service.looper;
 
 // copied from:
 //   https://github.com/xiangtailiang/FakeGPS/blob/V1.1/app/src/main/java/com/github/fakegps/LocationThread.java
 
-import com.github.warren_bank.mock_location.data_model.LocPoint;
+import com.github.team2.mock_location.data_model.LocPoint;
 
 import android.content.Context;
 import android.os.Handler;

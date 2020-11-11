@@ -1,9 +1,9 @@
-package com.github.warren_bank.mock_location.service;
+package com.github.team2.mock_location.service;
 
-import com.github.warren_bank.mock_location.R;
-import com.github.warren_bank.mock_location.data_model.LocPoint;
-import com.github.warren_bank.mock_location.service.looper.LocationThreadManager;
-import com.github.warren_bank.mock_location.ui.MainActivity;
+import com.github.team2.mock_location.R;
+import com.github.team2.mock_location.data_model.LocPoint;
+import com.github.team2.mock_location.service.looper.LocationThreadManager;
+import com.github.team2.mock_location.ui.MainActivity;
 
 import android.app.Notification;
 import android.app.NotificationChannel;

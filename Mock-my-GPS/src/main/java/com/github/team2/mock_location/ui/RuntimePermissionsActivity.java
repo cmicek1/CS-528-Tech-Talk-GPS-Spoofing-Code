@@ -1,4 +1,4 @@
-package com.github.warren_bank.mock_location.ui;
+package com.github.team2.mock_location.ui;
 
 import android.app.Activity;
 

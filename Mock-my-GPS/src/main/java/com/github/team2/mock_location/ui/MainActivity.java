@@ -1,7 +1,7 @@
-package com.github.warren_bank.mock_location.ui;
+package com.github.team2.mock_location.ui;
 
-import com.github.warren_bank.mock_location.R;
-import com.github.warren_bank.mock_location.service.LocationService;
+import com.github.team2.mock_location.R;
+import com.github.team2.mock_location.service.LocationService;
 
 import android.app.ActivityGroup;
 import android.content.Intent;

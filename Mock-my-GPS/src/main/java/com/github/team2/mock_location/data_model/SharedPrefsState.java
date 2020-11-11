@@ -1,6 +1,6 @@
-package com.github.warren_bank.mock_location.data_model;
+package com.github.team2.mock_location.data_model;
 
-import com.github.warren_bank.mock_location.R;
+import com.github.team2.mock_location.R;
 
 import android.content.Context;
 import android.content.SharedPreferences;

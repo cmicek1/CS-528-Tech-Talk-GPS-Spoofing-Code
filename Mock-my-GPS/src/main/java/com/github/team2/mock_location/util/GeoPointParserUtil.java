@@ -1,4 +1,4 @@
-package com.github.warren_bank.mock_location.util;
+package com.github.team2.mock_location.util;
 
 // copied from:
 //   https://github.com/osmandapp/Osmand/blob/2.0.0/OsmAnd-java/src/main/java/net/osmand/util/GeoPointParserUtil.java

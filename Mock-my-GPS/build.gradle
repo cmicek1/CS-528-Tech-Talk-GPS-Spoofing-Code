@@ -14,7 +14,7 @@ android {
         minSdkVersion project.ext.minSdkVersion
         targetSdkVersion project.ext.targetSdkVersion
 
-        applicationId "com.github.warren_bank.mock_location"
+        applicationId "com.github.team2.mock_location"
         versionName project.ext.releaseVersion
         versionCode project.ext.releaseVersionCode
     }

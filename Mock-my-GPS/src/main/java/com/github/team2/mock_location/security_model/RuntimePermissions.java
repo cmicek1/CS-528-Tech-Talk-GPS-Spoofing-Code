@@ -1,8 +1,8 @@
-package com.github.warren_bank.mock_location.security_model;
+package com.github.team2.mock_location.security_model;
 
-import com.github.warren_bank.mock_location.R;
-import com.github.warren_bank.mock_location.data_model.SharedPrefs;
-import com.github.warren_bank.mock_location.ui.RuntimePermissionsActivity;
+import com.github.team2.mock_location.R;
+import com.github.team2.mock_location.data_model.SharedPrefs;
+import com.github.team2.mock_location.ui.RuntimePermissionsActivity;
 
 import android.app.Activity;
 import android.content.Context;

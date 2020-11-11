@@ -1,4 +1,4 @@
-package com.github.warren_bank.mock_location.util;
+package com.github.team2.mock_location.util;
 
 // copied from:
 //   https://github.com/xiangtailiang/FakeGPS/blob/V1.1/app/src/main/java/com/github/fakegps/ScreenUtils.java

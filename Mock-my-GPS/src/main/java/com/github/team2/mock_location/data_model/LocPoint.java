@@ -1,4 +1,4 @@
-package com.github.warren_bank.mock_location.data_model;
+package com.github.team2.mock_location.data_model;
 
 // copied from:
 //   https://github.com/xiangtailiang/FakeGPS/blob/V1.1/app/src/main/java/com/github/fakegps/model/LocPoint.java

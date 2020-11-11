@@ -1,4 +1,4 @@
-package com.github.warren_bank.mock_location.service.looper;
+package com.github.team2.mock_location.service.looper;
 
 // copied from:
 //   https://github.com/mcastillof/FakeTraveler/blob/v1.6/app/src/main/java/cl/coders/faketraveler/MockLocationProvider.java
@@ -52,7 +52,7 @@ public class MockLocationProvider {
         mockLocation.setLongitude(lon);
         mockLocation.setAltitude(3F);
         mockLocation.setTime(System.currentTimeMillis());
-        //mockLocation.setAccuracy(16F);
+        mockLocation.setAccuracy(16F);
         mockLocation.setSpeed(0.01F);
         mockLocation.setBearing(1F);
         mockLocation.setAccuracy(3F);

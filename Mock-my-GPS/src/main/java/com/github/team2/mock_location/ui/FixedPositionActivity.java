@@ -1,10 +1,10 @@
-package com.github.warren_bank.mock_location.ui;
+package com.github.team2.mock_location.ui;
 
-import com.github.warren_bank.mock_location.R;
-import com.github.warren_bank.mock_location.data_model.LocPoint;
-import com.github.warren_bank.mock_location.data_model.SharedPrefs;
-import com.github.warren_bank.mock_location.security_model.RuntimePermissions;
-import com.github.warren_bank.mock_location.service.LocationService;
+import com.github.team2.mock_location.R;
+import com.github.team2.mock_location.data_model.LocPoint;
+import com.github.team2.mock_location.data_model.SharedPrefs;
+import com.github.team2.mock_location.security_model.RuntimePermissions;
+import com.github.team2.mock_location.service.LocationService;
 
 import android.content.Intent;
 import android.os.Bundle;
